@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+  .u-only-pc {
+    display: none !important;
+  }
+}
+
+.u-only-sp {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .u-only-sp {
+    display: block !important;
+  }
+}

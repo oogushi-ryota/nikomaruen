@@ -1,0 +1,35 @@
+// Foundation
+@use "foundation/reset";
+// @use "foundation/base";
+@use "foundation/variables" as *;
+
+// Layout
+@use "layout/main";
+@use "layout/footer";
+@use "layout/header";
+
+// Component
+@use "component/loop";
+@use "component/ttl";
+@use "component/inner";
+
+// Project
+// @use "project/top/";
+// @use "project/philosophy/";
+// @use "project/about/";
+// @use "project/schedule/";
+// @use "project/wellbeing/";
+// @use "project/benefits/";
+// @use "project/career/";
+// @use "project/worklife/";
+// @use "project/interview/";
+// @use "project/single/";
+// @use "project/faq/";
+// @use "project/entry/";
+
+// animation
+
+
+// Utility
+@use "utility/responsive.scss";
+@use "utility/txt";
