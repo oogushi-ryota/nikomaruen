@@ -19,6 +19,7 @@
 @use "component/breadcrumb";
 @use "component/under-fv";
 @use "component/sec-ttl";
+@use "component/sec-anchor";
 
 // Project
 // トップページ
@@ -34,6 +35,9 @@
 
 // 理念・保育方針
 @use "project/philosophy/philosophy";
+
+// 園の概要・施設紹介
+@use "project/about/about";
 
 // animation
 @use "animation/js-accordion";
