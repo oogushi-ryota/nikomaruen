@@ -1,4 +1,4 @@
-import $ from "jquery"; // ← 忘れずに！
+import $ from "jquery";
 
 // ▼下からフェードイン
 export function initScrollFadeIn({

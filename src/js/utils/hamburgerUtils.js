@@ -1,10 +1,10 @@
-import $ from "jquery"; // ← 忘れずに！
+import $ from "jquery";
 
 // ▼ハンバーガーメニュー
 export function initHamburgerMenu({
-  navSelector = ".nav",
-  btnSelector = ".nav-btn",
-  closeTargetSelector = ".nav__list__item a",
+  navSelector = ".js-nav",
+  btnSelector = ".js-nav-btn",
+  closeTargetSelector = ".l-header__nav-item a",
   extraTargets = [],
   lenisInstance = null,
 } = {}) {
@@ -17,10 +17,10 @@ export function initHamburgerMenu({
   function toggleMenu(isOpen) {
     const method = isOpen ? "addClass" : "removeClass";
 
-    $nav[method]("js_active");
-    $btn[method]("js_active");
-    $body[method]("js_active");
-    $extraEls.forEach($el => $el[method]("js_active"));
+    $nav[method]("is-active");
+    $btn[method]("is-active");
+    $body[method]("is-active");
+    $extraEls.forEach($el => $el[method]("is-active"));
 
     if (lenisInstance) {
       isOpen ? lenisInstance.stop() : lenisInstance.start();
@@ -29,7 +29,7 @@ export function initHamburgerMenu({
 
   // ハンバーガークリック
   $btn.on("click", () => {
-    const isOpening = !$nav.hasClass("js_active");
+    const isOpening = !$nav.hasClass("is-active");
     toggleMenu(isOpening);
   });
 

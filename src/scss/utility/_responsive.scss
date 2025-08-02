@@ -1,15 +1,15 @@
 @media (max-width: 767px) {
-  .u-only-pc {
+  .is-pc {
     display: none !important;
   }
 }
 
-.u-only-sp {
+.is-sp {
   display: none !important;
 }
 
 @media (max-width: 767px) {
-  .u-only-sp {
+  .is-sp {
     display: block !important;
   }
 }

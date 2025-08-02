@@ -1,35 +1,39 @@
 // Foundation
 @use "foundation/reset";
-// @use "foundation/base";
+@use "foundation/base";
 @use "foundation/variables" as *;
 
 // Layout
 @use "layout/main";
 @use "layout/footer";
 @use "layout/header";
+@use "layout/top-section";
 
 // Component
-@use "component/loop";
+@use "component/entry";
 @use "component/ttl";
 @use "component/inner";
+@use "component/top-ttl";
+@use "component/btn";
+@use "component/faq-list";
 
 // Project
-// @use "project/top/";
-// @use "project/philosophy/";
-// @use "project/about/";
-// @use "project/schedule/";
-// @use "project/wellbeing/";
-// @use "project/benefits/";
-// @use "project/career/";
-// @use "project/worklife/";
-// @use "project/interview/";
-// @use "project/single/";
-// @use "project/faq/";
-// @use "project/entry/";
+// トップページ
+@use "project/top/top-fv";
+@use "project/top/top-philosophy";
+@use "project/top/top-about";
+@use "project/top/top-working";
+@use "project/top/top-schedule";
+@use "project/top/top-wellbeing";
+@use "project/top/top-interview";
+@use "project/top/top-lifework";
+@use "project/top/top-faq";
 
 // animation
-
+@use "animation/js-accordion";
+@use "animation/js-nav";
 
 // Utility
 @use "utility/responsive.scss";
 @use "utility/txt";
+@use "utility/txt-bg";

@@ -1,0 +1,33 @@
+@use "foundation/variables" as *;
+
+.l-top-section {
+  & {
+    margin-top: 16rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+
+    @media (max-width: 767px) {
+      margin-top: 8rem;
+      display: block;
+    }
+
+    &__hgroup {
+      align-items: center;
+    }
+
+    &__txt {
+      font-size: 2rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__btn-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
