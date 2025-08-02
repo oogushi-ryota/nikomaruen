@@ -16,6 +16,9 @@
 @use "component/top-ttl";
 @use "component/btn";
 @use "component/faq-list";
+@use "component/breadcrumb";
+@use "component/under-fv";
+@use "component/sec-ttl";
 
 // Project
 // トップページ
@@ -28,6 +31,9 @@
 @use "project/top/top-interview";
 @use "project/top/top-lifework";
 @use "project/top/top-faq";
+
+// 理念・保育方針
+@use "project/philosophy/philosophy";
 
 // animation
 @use "animation/js-accordion";
