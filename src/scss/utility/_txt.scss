@@ -19,3 +19,9 @@
 .u-fw-black {
   font-weight: 900;
 }
+
+.u-fs-28 {
+  @media (max-width: 767px) {
+    font-size: 2.8rem;
+  } 
+}

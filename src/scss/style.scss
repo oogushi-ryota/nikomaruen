@@ -39,6 +39,9 @@
 // 園の概要・施設紹介
 @use "project/about/about";
 
+// 安全・健康への取り組み
+@use "project/wellbeing/wellbeing";
+
 // animation
 @use "animation/js-accordion";
 @use "animation/js-nav";
