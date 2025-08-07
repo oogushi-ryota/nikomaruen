@@ -1,0 +1,153 @@
+@use "foundation/variables" as *;
+
+.p-wellbeing-cont {
+  & {
+    margin-top: 16rem;
+    padding-bottom: 16rem;
+    position: relative;
+
+    @media (max-width: 767px) {
+      margin-top: 9.6rem;
+      padding-bottom: 9.6rem;
+    }
+
+    &::after {
+      content: "";
+      width: 18.4rem;
+      height: 10.1rem;
+      background-image: url(../img/wellbeing/cont/cont_obj.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 0;
+      right: 32.7rem;
+
+      @media (max-width: 767px) {
+        width: 10rem;
+        height: 5.6rem;
+        right: 1rem;
+      }
+    }
+
+    &__wrap {
+      margin-top: 10.3rem;
+
+      @media (max-width: 767px) {
+        margin-top: 5.6rem;
+      }
+    }
+
+    &__blk {
+      &:not(:first-child) {
+        margin-top: 8rem;
+
+        @media (max-width: 767px) {
+          margin-top: 5.6rem;
+        }
+      }
+    }
+
+    &__blk-ttl {
+      color: $color-orange;
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 100%;
+      padding-left: 3.5rem;
+      position: relative;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+        line-height: 150%;
+      }
+
+      &::before {
+        content: "";
+        width: 2.3rem;
+        height: 2.3rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+      }
+
+      &--security {
+        &::before {
+          background-image: url(../img/wellbeing/cont/icon_security.svg);
+        }
+      }
+
+      &--heart {
+        &::before {
+          background-image: url(../img/wellbeing/cont/icon_heart.svg);
+        }
+      }
+
+      &--allergie {
+        &::before {
+          background-image: url(../img/wellbeing/cont/icon_allergie.svg);
+        }
+      }
+
+      &--disaster {
+        &::before {
+          background-image: url(../img/wellbeing/cont/icon_disaster.svg);
+        }
+      }
+    }
+
+    &__txt {
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 150%;
+      margin-top: 4rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+        margin-top: 2.4rem;
+      }
+    }
+
+    &__list {
+      margin-top: 4rem;
+
+      @media (max-width: 767px) {
+        margin-top: 2.4rem;
+      }
+    }
+
+    &__item {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 100%;
+      padding-left: 1em;
+      position: relative;
+
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+        line-height: 150%;
+      }
+
+      &::before {
+        content: "・";
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+      }
+
+      &:not(:first-child) {
+        margin-top: 2rem;
+
+        @media (max-width: 767px) {
+          margin-top: 1.2rem;
+        }
+      }
+    }
+  }
+}

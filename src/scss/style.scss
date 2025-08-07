@@ -52,7 +52,8 @@
 @use "project/schedule/schedule-year";
 
 // 安全・健康への取り組み
-@use "project/wellbeing/wellbeing";
+@use "project/wellbeing/wellbeing-fv";
+@use "project/wellbeing/wellbeing-cont";
 
 // よくあるご質問
 @use "project/faq/faq";

@@ -9,6 +9,7 @@
     background-image: url(../img/schedule/year/year_bg.png);
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
 
     @media (max-width: 767px) {
       width: 37.5rem;
@@ -17,6 +18,25 @@
       background-size: cover;
       margin-top: 9.6rem;
       padding: 9.6rem 0;
+    }
+
+    &::before {
+      content: "";
+      width: 8.3rem;
+      height: 25.9rem;
+      background-image: url(../img/schedule/year/year_obj.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: -9rem;
+      left: 23.6rem;
+
+      @media (max-width: 767px) {
+        width: 4rem;
+        height: 12.3rem;
+        top: -4rem;
+        left: 4rem;
+      }
     }
 
     &__season {
