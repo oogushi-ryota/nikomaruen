@@ -1,0 +1,173 @@
+@use "foundation/variables" as *;
+
+.p-schedule-year {
+  & {
+    width: 192rem;
+    height: 320.5rem;
+    margin-top: 16rem;
+    padding: 16rem 0;
+    background-image: url(../img/schedule/year/year_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 767px) {
+      width: 37.5rem;
+      height: 585rem;
+      background-image: url(../img/schedule/year/year_sp-bg.png);
+      background-size: cover;
+      margin-top: 9.6rem;
+      padding: 9.6rem 0;
+    }
+
+    &__season {
+      margin-top: 10.4rem;
+
+      @media (max-width: 767px) {
+        margin-top: 7.2rem;
+      }
+    }
+
+    &__blk {
+      background-color: $color-white;
+      border-radius: 3rem;
+      padding: 8rem;
+      position: relative;
+
+      @media (max-width: 767px) {
+        border-radius: 2rem;
+        padding: 4rem 2rem;
+      }
+
+      &::before {
+        content: "";
+        width: 8rem;
+        height: 8rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -4rem;
+        left: -4rem;
+
+        @media (max-width: 767px) {
+          width: 6.4rem;
+          height: 6.4rem;
+          top: -3rem;
+          left: -1rem;
+        }
+      }
+
+      &--spring {
+        &::before {
+          background-image: url(../img/schedule/year/icon_spring.svg);
+        }
+      }
+
+      &--summer {
+        &::before {
+          background-image: url(../img/schedule/year/icon_summer.svg);
+        }
+      }
+
+      &--autumn {
+        &::before {
+          background-image: url(../img/schedule/year/icon_autumn.svg);
+        }
+      }
+
+      &--winter {
+        &::before {
+          background-image: url(../img/schedule/year/icon_winter.svg);
+        }
+      }
+
+      &:not(:first-child) {
+        margin-top: 8rem;
+
+        @media (max-width: 767px) {
+          margin-top: 5.6rem;
+        }
+      }
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    &__item {
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: span 2;
+      gap: 3.2rem;
+
+      @media (max-width: 767px) {
+        gap: 2.4rem;
+      }
+    }
+
+    &__list-ttl {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 130%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 2rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+      }
+
+      &--spring {
+        color: #F09F94;
+      }
+
+      &--summer {
+        color: #0D8352;
+      }
+
+      &--autumn {
+        color: #F28B24;
+      }
+
+      &--winter {
+        color: #43B3D5;
+      }
+    }
+
+    &__month {
+      flex-shrink: 0;
+    }
+
+    &__txt {
+      font-size: 1.8rem;
+      line-height: 170%;
+      margin-top: 2.4rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__img {
+      width: 32rem;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      img {
+        border-radius: 2rem;
+
+        @media (max-width: 767px) {
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}

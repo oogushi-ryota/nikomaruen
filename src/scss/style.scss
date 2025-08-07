@@ -46,6 +46,11 @@
 @use "project/about/about-history";
 @use "project/about/about-facility";
 
+// 園の1日・年間行事
+@use "project/schedule/schedule-fv";
+@use "project/schedule/schedule-day";
+@use "project/schedule/schedule-year";
+
 // 安全・健康への取り組み
 @use "project/wellbeing/wellbeing";
 
