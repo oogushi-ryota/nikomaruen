@@ -20,6 +20,7 @@
 @use "component/under-fv";
 @use "component/sec-ttl";
 @use "component/sec-anchor";
+@use "component/color";
 
 // Project
 // トップページ
@@ -34,10 +35,16 @@
 @use "project/top/top-faq";
 
 // 理念・保育方針
-@use "project/philosophy/philosophy";
+@use "project/philosophy/philosophy-fv";
+@use "project/philosophy/philosophy-section";
+@use "project/philosophy/philosophy-policy";
+@use "project/philosophy/philosophy-goal";
 
 // 園の概要・施設紹介
-@use "project/about/about";
+@use "project/about/about-fv";
+@use "project/about/about-outline";
+@use "project/about/about-history";
+@use "project/about/about-facility";
 
 // 安全・健康への取り組み
 @use "project/wellbeing/wellbeing";

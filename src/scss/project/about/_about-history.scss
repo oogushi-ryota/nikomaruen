@@ -1,0 +1,137 @@
+@use "foundation/variables" as *;
+
+.p-about-history {
+  & {
+    margin-top: 16rem;
+
+    @media (max-width: 767px) {
+      margin-top: 9.6rem;
+    }
+
+    &__inner {
+      width: 88rem;
+      margin: 0 auto;
+      position: relative;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 0 2rem;
+      }
+
+      &::after {
+        content: "";
+        width: 28.1rem;
+        height: 19.4rem;
+        background-image: url(../img/about/outline/outline_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -4rem;
+        right: -10.2rem;
+
+        @media (max-width: 767px) {
+          width: 12rem;
+          height: 8.4rem;
+          right: 2rem;
+        }
+      }
+    }
+
+    &__list {
+      margin-top: 8rem;
+
+      @media (max-width: 767px) {
+        margin-top: 4.8rem;
+        padding-left: 4rem;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 9.2rem;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .4rem;
+      }
+
+      &:not(:first-child) {
+        margin-top: 4rem;
+
+        @media (max-width: 767px) {
+          margin-top: 2.4rem;
+        }
+      }
+
+      &:last-child {
+        .p-about-history__date {
+          &::after {
+            content: unset;
+          }
+        }
+      }
+    }
+
+    &__date {
+      line-height: 100%;
+      font-weight: 500;
+      text-align: right;
+      width: 15rem;
+      position: relative;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        text-align: left;
+      }
+
+      &::before {
+        content: "";
+        width: 1.2rem;
+        height: 1.2rem;
+        background-color: $color-orange;
+        border-radius: 100vmax;
+        position: absolute;
+        top: 50%;
+        right: -5rem;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+
+        @media (max-width: 767px) {
+          width: .8rem;
+          height: .8rem;
+          left: -4rem;
+          right: unset;
+        }
+      }
+
+      &::after {
+        content: "";
+        width: 1px;
+        height: 6rem;
+        background-color: $color-orange;
+        position: absolute;
+        top: .4rem;
+        right: -4.5rem;
+        transform-origin: top;
+
+        @media (max-width: 767px) {
+          height: 8.6rem;
+          left: -3.6rem;
+          right: unset;
+        }
+      }
+    }
+
+    &__txt {
+      line-height: 100%;
+
+      @media (max-width: 767px) {
+        line-height: 150%;
+      }
+    }
+  }
+}

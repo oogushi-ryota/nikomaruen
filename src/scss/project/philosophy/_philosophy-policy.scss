@@ -1,0 +1,87 @@
+@use "foundation/variables" as *;
+
+.p-philosophy-policy {
+  & {
+    background-color: #FEFCF6;
+    border-radius: 3rem;
+    position: relative;
+
+    @media (max-width: 767px) {
+      border-radius: 2rem;
+    }
+
+    &::after {
+      content: "";
+      width: 14.4rem;
+      height: 15rem;
+      background-image: url(../img/philosophy/policy/policy_obj.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: -8rem;
+      right: -6rem;
+
+      @media (max-width: 767px) {
+        width: 7.8rem;
+        height: 8.1rem;
+        bottom: -3.2rem;
+        right: 0;
+      }
+    }
+
+    &__inner {
+      padding: 8rem 16rem;
+
+      @media (max-width: 767px) {
+        padding: 6.4rem 1.6rem 9.8rem;
+      }
+    }
+
+    &__ttl-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__list {
+      margin-top: 8rem;
+
+      @media (max-width: 767px) {
+        margin-top: 4.8rem;
+      }
+    }
+
+    &__item {
+      font-size: 2.2rem;
+      font-weight: 500;
+      padding-left: 5.6rem;
+      position: relative;
+
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+        padding-left: 3.8rem;
+      }
+
+      &::before {
+        content: "";
+        width: 2.6rem;
+        height: 2.4rem;
+        background-image: url(../img/philosophy/policy/icon_list.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: .6rem;
+        left: 0;
+
+        @media (max-width: 767px) {
+          width: 2.4rem;
+          height: 2.2rem;
+        }
+      }
+
+      &:not(:first-child) {
+        margin-top: 3.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use "foundation/variables" as *;
+
+.p-philosophy-section {
+  & {
+    width: 192rem;
+    height: 144rem;
+    margin: 16rem 0;
+    padding: 16rem 0;
+    background-image: url(../img/philosophy/section/section_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 767px) {
+      width: 37.5rem;
+      height: 158.2rem;
+      background-image: url(../img/philosophy/section/section_sp-bg.png);
+      margin: 9.6rem 0;
+      padding: 14rem 0;
+    }
+  }
+}

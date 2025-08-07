@@ -27,6 +27,7 @@ window.addEventListener('load', () => {
 window.addEventListener('DOMContentLoaded', () => {
   initSwiper();          // ← スワイパー
   initAccordion()       //アコーディオン
+  initAnchorSmoothScroll();     // ← スムーススクロール
   initHamburgerMenu({           // ← ハンバーガーメニュー
     navSelector: ".js-nav",
     btnSelector: ".js-nav-btn",
@@ -34,7 +35,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   // animateSplitTextOnScroll();   // ← スクロール連動のテキストアニメーション
-  // initAnchorSmoothScroll();     // ← スムーススクロール
   // initScrollFadeIn();           // ← フェードイン
   // initClipPathAnimation();      // ← クリップパスアニメーション
   // initStaggerFadein();          // ← 順番にフェードイン
