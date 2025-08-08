@@ -1,21 +1,21 @@
 @use '../foundation/variables' as *;
 
 // // ▼アドビフォント_チラつき防止
-// html {
-//   visibility: hidden;
-//   /* ▼スクロールバーを無効化 (Firefox) */
-//   scrollbar-width: none;
-//   /* ▲スクロールバーを無効化 (Firefox) */
-// }
+html {
+  visibility: hidden;
+  /* ▼スクロールバーを無効化 (Firefox) */
+  scrollbar-width: none;
+  /* ▲スクロールバーを無効化 (Firefox) */
+}
 
-// html.wf-active {
-//   visibility: visible;
-// }
-// // ▲アドビフォント_チラつき防止
+html.wf-active {
+  visibility: visible;
+}
+// ▲アドビフォント_チラつき防止
 
-// body, html {
-//   font-size:62.5%;
-// }
+body, html {
+  font-size:62.5%;
+}
 
 @media screen and (min-width: 768px) {
   html, body {

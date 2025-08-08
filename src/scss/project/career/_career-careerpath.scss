@@ -1,0 +1,72 @@
+@use "foundation/variables" as *;
+
+.p-career-careerpath {
+  & {
+    margin-top: 16rem;
+    padding-bottom: 16rem;
+
+    @media (max-width: 767px) {
+      margin-top: 9.6rem;
+      padding-bottom: 9.6rem;
+    }
+
+    &__ttl-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.7rem;
+      margin-top: 10.4rem;
+
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.4rem;
+        margin-top: 5.6rem;
+      }
+    }
+
+    &__item {
+      padding: 4rem 2rem;
+      background-color: $color-yellow;
+      border-radius: 2rem;
+      display: grid;
+      grid-template-rows: subgrid;
+      grid-row: span 2;
+      justify-items: center;
+      gap: 3.2rem;
+
+      @media (max-width: 767px) {
+        padding: 2rem 2rem;
+        gap: 2.4rem;
+      }
+    }
+
+    &__img {
+      width: 20.4rem;
+    }
+
+    &__list-ttl {
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 140%;
+      text-align: center;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+    }
+
+    &__txt {
+      font-size: 1.6rem;
+      margin-top: 2.4rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

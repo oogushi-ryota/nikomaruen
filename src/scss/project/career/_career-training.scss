@@ -1,0 +1,100 @@
+@use "foundation/variables" as *;
+
+.p-career-training {
+  & {
+    margin-top: 8rem;
+
+    &__blk {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        @media (max-width: 767px) {
+          flex-direction: column;
+        }
+      }
+
+      &:not(:first-child) {
+        margin-top: 8rem;
+
+        @media (max-width: 767px) {
+          margin-top: 4rem;
+        }
+      }
+    }
+
+    &__img {
+      width: 51rem;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      img {
+        border-radius: 3rem;
+
+        @media (max-width: 767px) {
+          border-radius: 2rem;
+        }
+      }
+    }
+
+    &__txtarea {
+      width: 61rem;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-top: 2.4rem;
+      }
+    }
+
+    &__ttl {
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 100%;
+      padding-left: 3.6rem;
+      position: relative;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+        padding-left: 2.4rem;
+      }
+
+      &::before {
+        content: "";
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url(../img/career/training/ttl_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+
+        @media (max-width: 767px) {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
+    }
+
+    &__txt {
+      margin-top: 4rem;
+
+      @media (max-width: 767px) {
+        margin-top: 2.4rem;
+      }
+    }
+  }
+}
