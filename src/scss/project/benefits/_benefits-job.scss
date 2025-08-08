@@ -1,0 +1,96 @@
+@use "foundation/variables" as *;
+
+.p-benefits-job {
+  & {
+    width: 192rem;
+    height: 131rem;
+    background-image: url(../img/benefits/job/job_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 16rem;
+    padding: 16rem 0;
+    position: relative;
+
+    @media (max-width: 767px) {
+      width: 37.5rem;
+      height: 145.7rem;
+      background-image: url(../img/benefits/job/job_sp-bg.png);
+      margin-top: 9.6rem;
+      padding: 9.6rem 0;
+    }
+
+    &::before {
+      content: "";
+      width: 16rem;
+      height: 15.7rem;
+      background-image: url(../img/benefits/job/job_obj.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 1.8rem;
+      right: 35.2rem;
+
+      @media (max-width: 767px) {
+        width: 9rem;
+        height: 8.8rem;
+        top: -.8rem;
+        right: 1.7rem;
+      }
+    }
+
+    &__inner {
+      width: 88rem;
+      margin: 0 auto;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 0 2rem;
+      }
+    }
+
+    &__table {
+      width: 100%;
+      margin-top: 8rem;
+
+      @media (max-width: 767px) {
+        margin-top: 5.6rem;
+      }
+    }
+
+    &__tr {
+      display: block;
+      padding: 1.9rem 0;
+      border-top: solid 1px #D8D8D8;
+
+      @media (max-width: 767px) {
+        padding: 2.4rem 0;
+      }
+
+      &:last-child {
+        border-bottom: solid 1px #D8D8D8;
+      }
+    }
+
+    &__th {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 100%;
+      text-align: left;
+      width: 28rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.5rem;
+        width: 12rem;
+      }
+    }
+
+    &__td {
+      font-size: 1.6rem;
+      line-height: 150%;
+
+      @media (max-width: 767px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

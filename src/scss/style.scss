@@ -55,6 +55,11 @@
 @use "project/wellbeing/wellbeing-fv";
 @use "project/wellbeing/wellbeing-cont";
 
+// 安全・健康への取り組み
+@use "project/benefits/benefits-fv";
+@use "project/benefits/benefits-details";
+@use "project/benefits/benefits-job";
+
 // よくあるご質問
 @use "project/faq/faq";
 
