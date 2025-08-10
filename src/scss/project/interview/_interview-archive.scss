@@ -1,0 +1,174 @@
+@use "foundation/variables" as *;
+
+.p-interview-archive {
+  & {
+    margin-top: 16rem;
+    padding-bottom: 12rem;
+
+    @media (max-width: 767px) {
+      margin-top: 9.6rem;
+      padding-bottom: 8rem;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3.2rem;
+      }
+    }
+
+    &__item {
+      width: 37rem;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    &__img-wrap {
+      position: relative;
+    }
+
+    &__img {
+      width: 37rem;
+      height: 37rem;
+      aspect-ratio: 370 / 370;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+      }
+
+      img {
+        height: 100%;
+        border-radius: 3rem;
+        object-fit: cover;
+
+        @media (max-width: 767px) {
+          border-radius: 2rem;
+        }
+      }
+    }
+
+    &__name {
+      color: $color-white;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 100%;
+      padding: 1.2rem;
+      border-radius: .5rem;
+      position: absolute;
+      bottom: 3rem;
+      right: -1.2rem;
+      z-index: 1;
+
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+        padding: .8rem;
+        border-radius: .2rem;
+        bottom: 2.4rem;
+        right: -.8rem;
+      }
+    }
+
+    &__txt {
+      color: #333;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 150%;
+      display: -webkit-inline-box;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      margin-top: 2rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__pager {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.2rem;
+      margin-top: 10rem;
+
+      @media (max-width: 767px) {
+        gap: 2rem;
+        margin-top: 5.6rem;
+      }
+
+      .page-numbers {
+        font-family: $font-en;
+        color: $color-orange;
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0;
+
+        @media (max-width: 767px) {
+          font-size: 1.4rem;
+        }
+
+        &.current {
+          color: $color-white;
+          width: 4.4rem;
+          height: 4.4rem;
+          background-color: $color-orange;
+          border-radius: 100vmax;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @media (max-width: 767px) {
+            width: 3.2rem;
+            height: 3.2rem;
+          }
+        }
+
+        &.prev,
+        &.next {
+          position: relative;
+
+          &::before {
+            content: "";
+            width: 1rem;
+            height: 1.7rem;
+            background-image: url(../img/interview/archive/icon_arrow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+
+            @media (max-width: 767px) {
+              width: .6rem;
+              height: 1rem;
+            }
+          }
+        }
+
+        &.prev {
+          &::before {
+            left: 0%;
+            transform: translateY(-50%) scale(-1, -1);
+            -webkit-transform: translateY(-50%) scale(-1, -1);
+            -ms-transform: translateY(-50%) scale(-1, -1);
+          }
+        }
+
+        &.next {
+          &::before {
+            right: 0%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -149,11 +149,11 @@
     }
 
     &__txt {
+      color: #333;
       font-weight: 500;
       font-size: 2rem;
       line-height: 150%;
       letter-spacing: .05em;
-      color: #333;
       display: -webkit-inline-box;
       overflow: hidden;
       -webkit-line-clamp: 2;
