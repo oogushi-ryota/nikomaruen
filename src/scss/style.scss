@@ -69,9 +69,12 @@
 @use "project/lifework/lifework-fv";
 @use "project/lifework/lifework-flow";
 
-// 職員インタビュー
+// 職員インタビュー_一覧
 @use "project/interview/interview-fv";
 @use "project/interview/interview-archive";
+
+// 職員インタビュー_詳細
+@use "project/single/interview-details";
 
 // よくあるご質問
 @use "project/faq/faq";
