@@ -79,6 +79,10 @@
 // よくあるご質問
 @use "project/faq/faq";
 
+// エントリー
+@use "project/entry/entry-fv";
+@use "project/entry/entry-cont";
+
 // animation
 @use "animation/js-accordion";
 @use "animation/js-nav";
