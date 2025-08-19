@@ -69,15 +69,41 @@ function audio() {
     .pipe(dest("dist/assets/audio"));
 }
 
+// === WP連携: dist/assets → wp/assets を同期 ==================================
+// 出力先（リポジトリ内の WordPress テーマ assets）
+const WP_ASSETS = "wp/assets";
+
+/**
+ * **dist → wp 同期タスク**
+ * - dist/assets に出力された成果物を、そのまま wp/assets 配下へコピー
+ * - base を "dist/assets" に揃えることで、ディレクトリ構造を維持
+ * - allowEmpty: 初回の dist が空でもエラーにしない
+ */
+function syncWp() {
+  return src("dist/assets/**/*", { base: "dist/assets", allowEmpty: true })
+    .pipe(dest(WP_ASSETS));
+}
+export { syncWp };
+
 
 // **サーバー起動**
 function serve() {
   browserSync.init({ server: { baseDir: "dist" } });
 
+  // **SCSSコンパイル**
   watch("src/scss/**/*.scss", styles);
+
+  // **JSバンドル**
   watch("src/js/**/*.js", scripts);
+
+  // **画像圧縮 & WebP 生成**
   watch("src/img/**/*", series(images, convertWebp));
-  watch("src/html/**/*.html", html); // ←ここを限定
+
+  // **HTMLコピー**
+  watch("src/html/**/*.html", html);
+
+  // **WP連携（重要）: distに何か出力されたら、即 wp/assets に同期**
+  watch("dist/assets/**/*", syncWp);
 }
 
 // **タスクのエクスポート**
@@ -85,7 +111,16 @@ function serve() {
 export { styles, scripts, images, convertWebp, html, audio, serve };
 
 // default（開発用）タスク
-export default series(parallel(styles, scripts, images, convertWebp, html, audio), serve);
+// 1) dist を作る → 2) wp/assets に同期 → 3) サーバ起動 & 監視
+export default series(
+  parallel(styles, scripts, images, convertWebp, html, audio),
+  syncWp,   // ★ dist → wp 同期
+  serve
+);
 
 // build（本番用）タスク
-export const build = series(styles, scripts, images, convertWebp, html, audio);
+// 1) dist を作る → 2) wp/assets に同期（サーバは起動しない）
+export const build = series(
+  styles, scripts, images, convertWebp, html, audio,
+  syncWp    // ★ dist → wp 同期
+);
