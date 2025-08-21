@@ -25,4 +25,11 @@ function mvwpform_autop_filter()
 }
 mvwpform_autop_filter();
 
+//MW WP Formの管理画面でホームURLを返す
+function my_mwform_complete_message( $message, $form_key, $insert_id ) {
+    $message = str_replace( '{home_url}', esc_url( home_url( '/' ) ), $message );
+    return $message;
+}
+add_filter( 'mwform_complete_message_mw-wp-form-123', 'my_mwform_complete_message', 10, 3 );
+
 ?>
