@@ -408,128 +408,44 @@ Template Name: トップページ
           </h2>
         </hgroup>
         <div class="p-top-interview__swiper">
+          <?php
+          $args = array(
+            'post_type' => 'post-interview',
+            'posts_per_page' => -1, // すべての投稿を表示する場合は-1に設定
+            'orderby'        => 'date',   // 日付で並べ替え
+            'order'          => 'DESC',   // 降順（新しいものが先頭）
+          );
+
+          $interview_query = new WP_Query($args);
+          ?>
+
+          <?php if ($interview_query->have_posts()) : ?>
+
           <ul class="p-top-interview__swiper-wrapper swiper-wrapper">
+          <?php while ($interview_query->have_posts()) : $interview_query->the_post(); ?>
             <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
+              <a href="<?php the_permalink(); ?>" class="p-top-interview__swiper-link">
                 <div class="p-top-interview__img-wrap">
                   <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
+                  <?php if (has_post_thumbnail()) :?>
+                    <source srcset="<?php echo get_the_post_thumbnail_url(); ?>" type="image/webp">
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="職員インタビューのサムネイル">
+                  <?php endif; ?>
                   </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
+                  <span class="p-top-interview__name" style="background-color: <?php the_field('backgroud-color'); ?>;"><?php the_field('year'); ?>年目 : <?php the_field('teacher'); ?>先生</span>
                 </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
+                <p class="p-top-interview__txt"><?php the_title(); ?></p>
               </a>
             </li>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
-                </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
-              </a>
-            </li>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
-                </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
-              </a>
-            </li>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
-                </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
-              </a>
-            </li>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
-                </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
-              </a>
-            </li>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
-                </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
-              </a>
-            </li>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
-                </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
-              </a>
-            </li>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
-                </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
-              </a>
-            </li>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
-                </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
-              </a>
-            </li>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php echo esc_url( home_url( '/single/' ) ); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: #852A17;">3年目 : M先生</span>
-                </div>
-                <p class="p-top-interview__txt">このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。</p>
-              </a>
-            </li>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
           </ul>
+
+          <?php else : ?>
+            <!-- 投稿がない場合のメッセージ -->
+            <p class="p-top-interview__no-posts">投稿がありません。</p>
+          <?php endif; ?>
+
         </div>
         <div class="p-top-interview__pagination swiper-pagination"></div>
         <div class="p-top-interview__btn-wrap">

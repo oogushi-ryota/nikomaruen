@@ -11,6 +11,7 @@ import { initSwiper } from "./utils/swiperUtils.js";
 import { initAccordion } from "./utils/accordionUtils.js";
 import { initScrollFadeIn, initClipPathAnimation, initStaggerFadein } from "./utils/scrollEffects.js";
 import { initHamburgerMenu } from "./utils/hamburgerUtils.js";
+import { preventEnterSubmit } from "./utils/formUtils.js";
 import { animateInitialTextSplit, animateSplitTextOnScroll } from "./utils/splitTextUtils.js";
 
 // ▼GSAP に ScrollTrigger を登録
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSwiper();          // ← スワイパー
   initAccordion()       //アコーディオン
   initAnchorSmoothScroll();     // ← スムーススクロール
+  preventEnterSubmit();
   initHamburgerMenu({           // ← ハンバーガーメニュー
     navSelector: ".js-nav",
     btnSelector: ".js-nav-btn",

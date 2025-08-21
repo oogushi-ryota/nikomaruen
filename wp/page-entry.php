@@ -36,12 +36,14 @@ Template Name: エントリー
 
     <section class="p-entry-cont">
       <div class="p-entry-cont__inner">
-        <p class="p-entry-cont__txt">
+        <!-- <p class="p-entry-cont__txt">
           にこまるえんにご興味をお持ちいただき、<br class="is-sp">ありがとうございます。<br>
           ご応募はもちろん、園の見学やご相談だけでも大歓迎です。<br>
           下記よりお気軽にお問い合わせください。
-        </p>
-        <div class="p-entry-cont__form">
+        </p> -->
+
+        <?php echo do_shortcode('[mwform_formkey key="45"]'); ?>
+        <!-- <div class="p-entry-cont__form">
           <div class="p-entry-cont__formblk">
             <label class="p-entry-cont__label" for="name">
               氏名
@@ -112,11 +114,8 @@ Template Name: エントリー
         <div class="p-entry-cont__btn-wrap">
           <a href="" class="p-entry-cont__btn c-btn">
             <span class="c-btn__txt">送信内容を確認する</span>
-            <!-- <svg class="p-entry-cont__svg c-btn__svg" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.2324 5.68066L0.704101 11.1807L0.704102 0.180664L10.2324 5.68066Z" fill="white"/>
-            </svg>                   -->
           </a>
-        </div>
+        </div> -->
       </div>
     </section>
     

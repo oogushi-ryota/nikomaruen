@@ -43,22 +43,14 @@ Template Name: 職員インタビュー詳細
           </picture>
           <div class="p-interview-details__ttlarea">
             <span class="p-interview-details__name" style="color: #852A17;">3年目 : M先生</span>
-            <h2 class="p-interview-details__ttl">大変な仕事も先輩方と一緒に乗り越えられる</h2>
+            <h2 class="p-interview-details__ttl"><?php the_title(); ?></h2>
           </div>
         </div>
         <div class="p-interview-details__cont">
-          <h2>h2タイトルが入ります。h2タイトルが入ります。</h2>
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-          <h3>h3タイトルが入ります。h3タイトルが入ります。</h3>
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-          <h4>h4タイトルが入ります。h4タイトルが入ります。</h4>
-          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-          <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" alt="インタビューのサムネイル">
-          </figure>
+        <?php the_content(); ?>
         </div>
         <div class="p-interview-details__btn-wrap">
-          <a href="/nikomaruen/interview" class="p-interview-details__btn c-btn">
+          <a href="<?php echo esc_url( home_url( '/interview/' ) ); ?>" class="p-interview-details__btn c-btn">
             <span class="c-btn__txt">職員インタビュー一覧へ</span>
             <svg class="p-interview-details__svg c-btn__svg" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10.2324 5.68066L0.704101 11.1807L0.704102 0.180664L10.2324 5.68066Z" fill="white"/>

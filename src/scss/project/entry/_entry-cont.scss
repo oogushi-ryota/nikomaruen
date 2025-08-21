@@ -116,6 +116,21 @@
       &::placeholder {
         color: #D8D8D8;
       }
+
+      &--select {
+        appearance: none; /* 矢印を消す */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url(../img/entry/cont/icon_serect-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 1.4rem auto;
+        background-position: right 2.4rem center;
+
+        @media (max-width: 767px) {
+          background-size: 1.2rem auto;
+          background-position: right 1.2rem center;
+        }
+      }
     }
 
     &__radio {
@@ -139,6 +154,8 @@
 
     &__btn {
       position: relative;
+      transition: all .5s;
+      cursor: pointer;
 
       &::after {
         content: "";
@@ -154,6 +171,59 @@
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
       }
+
+      .c-btn__txt {
+        background-color: transparent;
+        border: unset;
+        padding: unset;
+        line-height: normal;
+        cursor: pointer;
+      }
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+
+  .mw_wp_form.mw_wp_form_confirm {
+    .p-entry-cont__btn-wrap {
+      gap: 4rem;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+
+    .p-entry-cont__btn--back {
+      color: #999999;
+      background-color: #D8D8D8;
+
+      &::after {
+        background-image: url(../img/entry/cont/icon_back-arrow.svg);
+        right: unset;
+        left: 2rem;
+      }
+    }
+  }
+
+  &__top-btn {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1.1rem;
+      height: 1.2rem;
+      background-image: url(../img/entry/cont/icon_arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      transform: translateY(-50%) scale(-1, -1);
+      -webkit-transform: translateY(-50%) scale(-1, -1);;
+      -ms-transform: translateY(-50%) scale(-1, -1);;
     }
   }
 }
