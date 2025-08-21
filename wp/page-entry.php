@@ -36,86 +36,9 @@ Template Name: エントリー
 
     <section class="p-entry-cont">
       <div class="p-entry-cont__inner">
-        <!-- <p class="p-entry-cont__txt">
-          にこまるえんにご興味をお持ちいただき、<br class="is-sp">ありがとうございます。<br>
-          ご応募はもちろん、園の見学やご相談だけでも大歓迎です。<br>
-          下記よりお気軽にお問い合わせください。
-        </p> -->
 
         <?php echo do_shortcode('[mwform_formkey key="45"]'); ?>
-        <!-- <div class="p-entry-cont__form">
-          <div class="p-entry-cont__formblk">
-            <label class="p-entry-cont__label" for="name">
-              氏名
-              <span class="p-entry-cont__required">必須</span>
-            </label>
-            <div class="p-entry-cont__inputarea">
-              <input placeholder="例）日本 太郎" size="40" class="p-entry-cont__default" id="name" type="text" name="name" required aria-required="true">
-            </div>
-          </div>
-          <div class="p-entry-cont__formblk">
-            <label class="p-entry-cont__label" for="furigana">
-              フリガナ
-              <span class="p-entry-cont__required">必須</span>
-            </label>
-            <div class="p-entry-cont__inputarea">
-              <input placeholder="例）ニホン タロウ" size="40" class="p-entry-cont__default" id="furigana" type="text" name="furigana" required aria-required="true">
-            </div>
-          </div>
-          <div class="p-entry-cont__formblk">
-            <fieldset class="p-entry-cont__fieldset">
-              <legend class="p-entry-cont__legend">
-                性別
-                <span class="p-entry-cont__required">必須</span>
-              </legend>
-              <div class="p-entry-cont__radio">
-                <label class="p-entry-cont__label">
-                  <input type="radio" name="gender" value="male" required>
-                  <span>男性</span>
-                </label>
-                <label class="p-entry-cont__label">
-                  <input type="radio" name="gender" value="female" required>
-                  <span>女性</span>
-                </label>
-              </div>
-            </fieldset>
-          </div>
-          <div class="p-entry-cont__formblk">
-            <label class="p-entry-cont__label" for="mail">
-              メールアドレス
-              <span class="p-entry-cont__required">必須</span>
-            </label>
-            <div class="p-entry-cont__inputarea">
-              <input placeholder="xxxx@gmail.com" size="40" class="p-entry-cont__default" id="mail" type="email" name="mail" required aria-required="true">
-            </div>
-          </div>      
-          <div class="p-entry-cont__formblk">
-            <label class="p-entry-cont__label" for="tel">
-              電話番号
-              <span class="p-entry-cont__required">必須</span>
-            </label>
-            <div class="p-entry-cont__inputarea">
-              <input placeholder="000-0000-0000" size="40" class="p-entry-cont__default" id="tel" type="text" name="tel" required aria-required="true">
-            </div>
-          </div>      
-          <div class="p-entry-cont__formblk">
-            <label class="p-entry-cont__label" for="resume">履歴書・職務経歴書</label>
-            <div class="p-entry-cont__inputarea">
-              <input class="p-entry-cont__file" type="file" name="resume" required aria-required="true">
-            </div>
-          </div>   
-          <div class="p-entry-cont__formblk">
-            <label class="p-entry-cont__label" for="details">ご相談、ご要望などあればご記入下さい</label>
-            <div class="p-entry-cont__inputarea">
-              <textarea name="details" class="p-entry-cont__default" id="details" cols="100" rows="10"></textarea>
-            </div>
-          </div>     
-        </div>
-        <div class="p-entry-cont__btn-wrap">
-          <a href="" class="p-entry-cont__btn c-btn">
-            <span class="c-btn__txt">送信内容を確認する</span>
-          </a>
-        </div> -->
+
       </div>
     </section>
     
