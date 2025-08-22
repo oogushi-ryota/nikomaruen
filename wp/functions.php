@@ -30,6 +30,25 @@ function my_mwform_complete_message( $message, $form_key, $insert_id ) {
     $message = str_replace( '{home_url}', esc_url( home_url( '/' ) ), $message );
     return $message;
 }
-add_filter( 'mwform_complete_message_mw-wp-form-123', 'my_mwform_complete_message', 10, 3 );
+add_filter( 'mwform_complete_message_mw-wp-form-45', 'my_mwform_complete_message', 10, 3 );
+
+//MW WP Form「希望施設名」の選択肢によってメールアドレスを変える
+add_filter( 'mwform_admin_mail_mw-wp-form-45', function( $Mail, $values, $Data ) {
+    $facility = $Data->get( 'facility' );
+    $recipients = array( 'nikomaru@nikomaruen.jp' ); // 共通宛先
+
+    if ( $facility === 'にこまるえん東白石' ) {
+        $recipients[] = 'oosawa@nikomaruen.jp';
+    } elseif ( $facility === 'にこまるえん南郷' ) {
+        $recipients[] = 'sugimoto@nikomaruen.jp';
+    } elseif ( $facility === 'にこまるえん白石' ) {
+        $recipients[] = 'mieko@nikomaruen.jp';        
+    } elseif ( $facility === 'にこまるえん円山' ) {
+        $recipients[] = 'hitomi@nikomaruen.jp';
+    }
+
+    $Mail->to = implode( ',', $recipients );
+    return $Mail;
+}, 10, 3 );
 
 ?>
