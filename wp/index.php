@@ -421,24 +421,28 @@ Template Name: トップページ
 
           <?php if ($interview_query->have_posts()) : ?>
 
-          <ul class="p-top-interview__swiper-wrapper swiper-wrapper">
-          <?php while ($interview_query->have_posts()) : $interview_query->the_post(); ?>
-            <li class="p-top-interview__swiper-slide swiper-slide">
-              <a href="<?php the_permalink(); ?>" class="p-top-interview__swiper-link">
-                <div class="p-top-interview__img-wrap">
-                  <picture class="p-top-interview__swiper-img">
-                  <?php if (has_post_thumbnail()) :?>
-                    <source srcset="<?php echo get_the_post_thumbnail_url(); ?>" type="image/webp">
-                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="職員インタビューのサムネイル">
-                  <?php endif; ?>
-                  </picture>
-                  <span class="p-top-interview__name" style="background-color: <?php the_field('backgroud-color'); ?>;"><?php the_field('year'); ?>年目 : <?php the_field('teacher'); ?>先生</span>
-                </div>
-                <p class="p-top-interview__txt"><?php the_title(); ?></p>
-              </a>
-            </li>
-          <?php endwhile; ?>
-          <?php wp_reset_postdata(); ?>
+            <ul class="p-top-interview__swiper-wrapper swiper-wrapper">
+            <?php for ( $i = 0; $i < 2; $i++ ) : // 同じループを3回繰り返す ?>
+              <?php while ( $interview_query->have_posts() ) : $interview_query->the_post(); ?>
+                <li class="p-top-interview__swiper-slide swiper-slide">
+                  <a href="<?php the_permalink(); ?>" class="p-top-interview__swiper-link">
+                    <div class="p-top-interview__img-wrap">
+                      <picture class="p-top-interview__swiper-img">
+                        <?php if ( has_post_thumbnail() ) : ?>
+                          <source srcset="<?php echo get_the_post_thumbnail_url(); ?>" type="image/webp">
+                          <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="職員インタビューのサムネイル">
+                        <?php endif; ?>
+                      </picture>
+                      <span class="p-top-interview__name" style="background-color: <?php the_field('backgroud-color'); ?>;">
+                        <?php the_field('year'); ?>年目 : <?php the_field('teacher'); ?>先生
+                      </span>
+                    </div>
+                    <p class="p-top-interview__txt"><?php the_title(); ?></p>
+                  </a>
+                </li>
+              <?php endwhile; ?>
+              <?php $interview_query->rewind_posts(); // ループをリセットして再利用 ?>
+            <?php endfor; ?>
           </ul>
 
           <?php else : ?>

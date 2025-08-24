@@ -52,7 +52,7 @@ Template Name: よくあるご質問
                 <span class="c-faq-list__a-mark">
                   <span class="c-faq-list__a-mark-txt">A</span>
                 </span>
-                <p class="c-faq-list__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <p class="c-faq-list__txt">採用までの面接は１回です。面接前の園見学も実施しておりますのでお気軽に問い合わせください。道内はもちろん道外にも面接に伺っております。</p>
               </div>
             </details>
           </li>
@@ -71,7 +71,7 @@ Template Name: よくあるご質問
                 <span class="c-faq-list__a-mark">
                   <span class="c-faq-list__a-mark-txt">A</span>
                 </span>
-                <p class="c-faq-list__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <p class="c-faq-list__txt">3月4月は多くて10時間ぐらいの残業になる方もいますが、平均して3時間程度です。全く残業しない方もいます。</p>
               </div>
             </details>
           </li>
@@ -90,11 +90,11 @@ Template Name: よくあるご質問
                 <span class="c-faq-list__a-mark">
                   <span class="c-faq-list__a-mark-txt">A</span>
                 </span>
-                <p class="c-faq-list__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <p class="c-faq-list__txt">正職員は完全週休２日制で勤務はシフト制となります。固定勤務も可能です。パート職員は扶養内の方、扶養外の方もいます。</p>
               </div>
             </details>
           </li>
-          <li class="c-faq-list__item">
+          <!-- <li class="c-faq-list__item">
             <details class="c-faq-list__details js-accordion">
               <summary class="c-faq-list__summary js-summary">
                 <hgroup class="c-faq-list__hgroup">
@@ -112,7 +112,7 @@ Template Name: よくあるご質問
                 <p class="c-faq-list__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               </div>
             </details>
-          </li>
+          </li> -->
           <li class="c-faq-list__item">
             <details class="c-faq-list__details js-accordion">
               <summary class="c-faq-list__summary js-summary">
@@ -128,7 +128,7 @@ Template Name: よくあるご質問
                 <span class="c-faq-list__a-mark">
                   <span class="c-faq-list__a-mark-txt">A</span>
                 </span>
-                <p class="c-faq-list__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <p class="c-faq-list__txt">普段から職員は挨拶、笑顔、感謝の気持ちを大切にしているので、思いやりのある温かい雰囲気の中しっかりコミュニケーションがとれています。</p>
               </div>
             </details>
           </li>
@@ -147,7 +147,7 @@ Template Name: よくあるご質問
                 <span class="c-faq-list__a-mark">
                   <span class="c-faq-list__a-mark-txt">A</span>
                 </span>
-                <p class="c-faq-list__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <p class="c-faq-list__txt">はい、ご相談ください。</p>
               </div>
             </details>
           </li>
@@ -166,7 +166,7 @@ Template Name: よくあるご質問
                 <span class="c-faq-list__a-mark">
                   <span class="c-faq-list__a-mark-txt">A</span>
                 </span>
-                <p class="c-faq-list__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <p class="c-faq-list__txt">決まりは特にありませんが、保育園に見合った身だしなみをお願いします。</p>
               </div>
             </details>
           </li>

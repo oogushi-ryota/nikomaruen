@@ -38,8 +38,8 @@ Template Name: 職員インタビュー詳細
       <div class="p-interview-details__inner">
         <div class="p-interview-details__thumb">
           <picture class="p-interview-details__img">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/sample.jpg" width="1080" height="608" alt="インタビューのサムネイル">
+            <source srcset="<?php echo get_the_post_thumbnail_url(); ?>" type="image/webp">
+            <img src="<?php echo get_the_post_thumbnail_url(); ?>" width="1080" height="608" alt="職員インタビューのサムネイル">
           </picture>
           <div class="p-interview-details__ttlarea">
             <span class="p-interview-details__name" style="color: #852A17;">3年目 : M先生</span>
