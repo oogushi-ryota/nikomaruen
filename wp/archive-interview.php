@@ -25,9 +25,9 @@ Template Name: 職員インタビュー
           <div class="c-under-fv__txtarea">
             <hgroup class="c-under-fv__hgroup">
               <span class="c-under-fv__en">INTERVIEW</span>
-              <h2 class="c-under-fv__ja">
+              <h1 class="c-under-fv__ja">
                 <span class="p-interview-fv__txt-obj u-fs-28">職員インタビュー</span>
-              </h2>
+              </h1>
             </hgroup>
           </div>
         </div>

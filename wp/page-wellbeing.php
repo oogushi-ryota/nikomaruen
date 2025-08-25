@@ -25,9 +25,9 @@ Template Name: 安全・健康への取り組み
           <div class="c-under-fv__txtarea">
             <hgroup class="c-under-fv__hgroup">
               <span class="c-under-fv__en">INITIATIVE</span>
-              <h2 class="c-under-fv__ja">
+              <h1 class="c-under-fv__ja">
                 <span class="p-wellbeing-fv__txt-obj u-fs-28">安全・健康への取り組み</span>
-              </h2>
+              </h1>
             </hgroup>
           </div>
         </div>

@@ -25,9 +25,9 @@ Template Name: 園の概要・施設紹介
           <div class="c-under-fv__txtarea">
             <hgroup class="c-under-fv__hgroup">
               <span class="c-under-fv__en">OVERVIEW</span>
-              <h2 class="c-under-fv__ja">
+              <h1 class="c-under-fv__ja">
                 <span class="p-about-fv__txt-obj">園の概要・施設紹介</span>
-              </h2>
+              </h1>
             </hgroup>
             <nav class="c-sec-anchor">
               <ul class="c-sec-anchor__list">

@@ -25,9 +25,9 @@ Template Name: よくあるご質問
           <div class="c-under-fv__txtarea">
             <hgroup class="c-under-fv__hgroup">
               <span class="c-under-fv__en">FAQ</span>
-              <h2 class="c-under-fv__ja">
+              <h1 class="c-under-fv__ja">
                 <span class="p-faq__txt-obj">よくあるご質問</span>
-              </h2>
+              </h1>
             </hgroup>
           </div>
         </div>
@@ -94,25 +94,6 @@ Template Name: よくあるご質問
               </div>
             </details>
           </li>
-          <!-- <li class="c-faq-list__item">
-            <details class="c-faq-list__details js-accordion">
-              <summary class="c-faq-list__summary js-summary">
-                <hgroup class="c-faq-list__hgroup">
-                  <span class="c-faq-list__q-mark">
-                    <span class="c-faq-list__q-mark-txt">Q</span>
-                  </span>
-                  <h3 class="c-faq-list__ttl">未経験でもしっかりフォローしてもらえますか？</h3>
-                </hgroup>
-                <span class="c-faq-list__btn"></span>
-              </summary>
-              <div class="c-faq-list__answer js-answer">
-                <span class="c-faq-list__a-mark">
-                  <span class="c-faq-list__a-mark-txt">A</span>
-                </span>
-                <p class="c-faq-list__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-              </div>
-            </details>
-          </li> -->
           <li class="c-faq-list__item">
             <details class="c-faq-list__details js-accordion">
               <summary class="c-faq-list__summary js-summary">

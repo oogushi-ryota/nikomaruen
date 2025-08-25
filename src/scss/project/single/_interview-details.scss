@@ -88,9 +88,9 @@
     }
 
     &__cont {
-      & > h2 {
-        margin-top: 0 !important;
-      }
+      // & > h2 {
+      //   margin-top: 0 !important;
+      // }
 
       h2,
       h3,
@@ -99,11 +99,7 @@
         font-weight: 700;
         line-height: 150%;
         display: inline-block;
-        margin: 5.6rem 0 1.8rem;
-
-        @media (max-width: 767px) {
-          margin: 3.2rem 0 1rem;
-        }
+        margin: 3.2rem 0 1.8rem;
       }
 
       h2 {
