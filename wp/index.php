@@ -431,6 +431,9 @@ Template Name: トップページ
                         <?php if ( has_post_thumbnail() ) : ?>
                           <source srcset="<?php echo get_the_post_thumbnail_url(); ?>" type="image/webp">
                           <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="職員インタビューのサムネイル">
+                        <?php else : ?>
+                          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/common/thumbnail.webp" type="image/webp">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/thumbnail.jpg" alt="代替画像">
                         <?php endif; ?>
                       </picture>
                       <span class="p-top-interview__name" style="background-color: <?php the_field('backgroud-color'); ?>;">

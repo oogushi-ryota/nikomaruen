@@ -37,12 +37,14 @@ Template Name: 職員インタビュー詳細
     <section class="p-interview-details">
       <div class="p-interview-details__inner">
         <div class="p-interview-details__thumb">
-          <picture class="p-interview-details__img">
-            <source srcset="<?php echo get_the_post_thumbnail_url(); ?>" type="image/webp">
-            <img src="<?php echo get_the_post_thumbnail_url(); ?>" width="1080" height="608" alt="職員インタビューのサムネイル">
-          </picture>
+          <?php if (has_post_thumbnail()) : ?>
+            <picture class="p-interview-details__img">
+              <source srcset="<?php echo get_the_post_thumbnail_url(null, 'full'); ?>" type="image/webp">
+              <img src="<?php echo get_the_post_thumbnail_url(null, 'full'); ?>" alt="職員インタビューのサムネイル">
+            </picture>
+          <?php endif; ?>
           <div class="p-interview-details__ttlarea">
-            <span class="p-interview-details__name" style="color: #852A17;">3年目 : M先生</span>
+            <span class="p-interview-details__name" style="color: #852A17;"><?php the_field('year'); ?>年入職 : <?php the_field('teacher'); ?>先生</span>
             <h2 class="p-interview-details__ttl"><?php the_title(); ?></h2>
           </div>
         </div>
