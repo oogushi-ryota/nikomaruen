@@ -13,7 +13,10 @@ Template Name: 職員インタビュー詳細
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="c-breadcrumb__link">ホーム</a>
           </li>
           <li class="c-breadcrumb__item">
-            <span class="c-breadcrumb__link">職員インタビュー</span>
+            <a href="<?php echo esc_url( home_url( '/interview/' ) ); ?>" class="c-breadcrumb__link">職員インタビュー</a>            
+          </li>
+          <li class="c-breadcrumb__item">
+            <span class="c-breadcrumb__link"><?php the_title(); ?></span>
           </li>
         </ul>
       </nav>
