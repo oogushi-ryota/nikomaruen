@@ -120,15 +120,14 @@
     }
 
     &__item {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 500;
-      line-height: 100%;
+      line-height: 150%;
       padding-left: 1em;
       position: relative;
 
       @media (max-width: 767px) {
         font-size: 1.6rem;
-        line-height: 150%;
       }
 
       &::before {

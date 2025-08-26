@@ -68,7 +68,7 @@ Template Name: 福利厚生・待遇
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/benefits/details/details_img02.svg" width="136" height="136" alt="交通費規定支給">
             </picture>
             <div class="p-benefits-details__txtarea">
-              <h3 class="p-benefits-details__list-ttl">交通費規定支給</h3>
+              <h3 class="p-benefits-details__list-ttl">実費支給（上限なし）</h3>
               <p class="p-benefits-details__txt">公共交通機関を利用される方には、交通費を規定に基づいて支給。通勤にかかる負担を軽減します。</p>
             </div>
           </li>
@@ -105,7 +105,7 @@ Template Name: 福利厚生・待遇
             </picture>
             <div class="p-benefits-details__txtarea">
               <h3 class="p-benefits-details__list-ttl">賞与年2回</h3>
-              <p class="p-benefits-details__txt">年2回の賞与支給あり（※支給条件あり）。日々の努力やチームへの貢献がしっかり評価されます。</p>
+              <p class="p-benefits-details__txt">年2回の賞与支給あり（※支給条件あり）。日々の努力や保育への貢献がしっかり評価されます。</p>
             </div>
           </li>
           <li class="p-benefits-details__item p-benefits-details__item--07">
@@ -132,7 +132,7 @@ Template Name: 福利厚生・待遇
             </picture>
             <div class="p-benefits-details__txtarea">
               <h3 class="p-benefits-details__list-ttl">朝夕手当あり</h3>
-              <p class="p-benefits-details__txt">早番・遅番の時間帯に勤務された方には、1日300円の手当を支給。生活に合わせた働き方をサポートします。</p>
+              <p class="p-benefits-details__txt">早番・遅番の時間帯に勤務された方には、早朝時間帯は正職員1日500円、パート職員は1日800円、遅番の時間帯17：15以降勤務するパート職員は400円を支給しております。</p>
             </div>
           </li>
         </ul>

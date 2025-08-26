@@ -43,8 +43,12 @@ Template Name: 安全・健康への取り組み
             <p class="p-wellbeing-cont__txt">にこまるえんでは、不審者対策や施設の安全性にも配慮し、子どもたちが毎日を安心して過ごせる環境づくりに努めています。</p>
             <ul class="p-wellbeing-cont__list">
               <li class="p-wellbeing-cont__item">オートロックやインターホンによる入退室管理</li>
-              <li class="p-wellbeing-cont__item">散歩時の安全ベスト着用、複数人での引率体制</li>
+              <li class="p-wellbeing-cont__item">散歩時は不審者等に遭遇した場合のために、ココセコム（緊急ボタン）を導入。セコムの警備員が迅速に駆けつけて対応します。</li>
               <li class="p-wellbeing-cont__item">園内設備の定期点検・事故防止マニュアルの整備</li>
+              <li class="p-wellbeing-cont__item">
+                業界初のスマートウォッチ型の保育業務支援システム「にこまこ」を開発・導入致しました。<br>
+                その日の園児の登園状況、天気や緊急連絡、子どものアレルギー情報などを職員同士で瞬間に共有しています。
+              </li>
             </ul>
           </div>
           <div class="p-wellbeing-cont__blk">

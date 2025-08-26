@@ -30,10 +30,7 @@ Template Name: 研修制度・キャリアパス
               </h1>
             </hgroup>
             <h2 class="p-career-fv__ttl c-sec-ttl">研修制度</h2>
-            <p class="c-under-fv__txt">
-              入職時には園の理念や保育方針、年齢ごとの関わり方など、現場に必要な基礎知識を丁寧に学べる新人研修を実施しています。未経験の方やブランクのある方も安心して働き始められる環境です。<br>
-              また、月に1回の園内勉強会では、子どもの発達や保護者対応など、日々の保育に活かせるテーマを職員同士で学び合い、スキルアップにつなげています。
-            </p>
+            <p class="c-under-fv__txt">入職時には園の理念や保育方針、年齢ごとの関わり方など、現場に必要な基礎知識を丁寧に学べる新人研修を実施しています。未経験の方やブランクのある方も安心して働き始められる環境です。また株式会社北海道共創パートナーズさんに、にこまるえんオリジナルのコミュニケーション向上の研修や管理職研修、役員研修など行っており日々の保育に活かせるテーマを職員同士で学び合い、スキルアップにつなげています。</p>
           </div>
           <picture class="c-under-fv__img">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/career/fv/fv_img.webp" type="image/webp">
@@ -65,10 +62,10 @@ Template Name: 研修制度・キャリアパス
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/career/training/training_img02.png" width="510" height="340" alt="園内勉強会（月1回）の画像">
           </picture>
           <div class="p-career-training__txtarea">
-            <h2 class="p-career-training__ttl">園内勉強会（月1回）</h2>
+            <h2 class="p-career-training__ttl">園内研修（年：数回）</h2>
             <p class="p-career-training__txt">
-              保育の質を高めるため、月に1回、職員同士での勉強会を実施。<br>
-              子どもの発達や保護者対応、食育などをテーマに、事例共有や情報交換を行いながら学びを深めています。<br>
+              保育の質を高めるため、園内研修を実施。<br>
+              子どもの発達や保護者対応、食育、体感を鍛えるサッカー教室、外部の講師を招いて学びを深めています。<br>
               日々の保育にすぐ活かせる内容で、スキルアップにつながると好評です。
             </p>
           </div>

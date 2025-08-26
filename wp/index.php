@@ -236,8 +236,8 @@ Template Name: トップページ
         </ul>
       </div>
       <h1 class="p-top-fv__ttl">
-        <span class="p-top-fv__ttl-item">子どもたちの  できた！ を､</span>
-        <span class="p-top-fv__ttl-item">一番近くで支える喜び ｡</span>
+        <span class="p-top-fv__ttl-item">子ども、保護者、職員の1日が</span>
+        <span class="p-top-fv__ttl-item">笑顔で終わる保育園</span>
       </h1>
     </section>
 
