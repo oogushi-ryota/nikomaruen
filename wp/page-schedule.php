@@ -56,52 +56,52 @@ Template Name: 園の1日・年間行事
         <div class="p-schedule-day__cont">
           <ul class="p-schedule-day__list">
             <li class="p-schedule-day__item">
-              <span class="p-schedule-day__time">7:00 ~ 9:00</span>
+              <span class="p-schedule-day__time">7:00</span>
               <div class="p-schedule-day__details">
-                <h3 class="p-schedule-day__cont-ttl">登園・あいさつ・自由遊び</h3>
-                <p class="p-schedule-day__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <h3 class="p-schedule-day__cont-ttl">順次登園、自由遊び</h3>
+                <p class="p-schedule-day__txt">子どもたちは登園後、それぞれ好きな遊びを楽しみながら一日をスタートします。</p>
               </div>
             </li>
             <li class="p-schedule-day__item">
-              <span class="p-schedule-day__time">9:10</span>
+              <span class="p-schedule-day__time">9:30</span>
               <div class="p-schedule-day__details">
-                <h3 class="p-schedule-day__cont-ttl">見出しタイトルが入ります</h3>
-                <p class="p-schedule-day__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <h3 class="p-schedule-day__cont-ttl">朝の活動</h3>
+                <p class="p-schedule-day__txt">0〜2歳児は牛乳やお茶でおやつをとり、必要に応じて0歳児は午前寝をします。3〜5歳児は排泄・手洗いを済ませたあと、公園遊びや町内散歩、製作、わらべうたなどの活動に取り組みます。</p>
               </div>
             </li>
             <li class="p-schedule-day__item">
-              <span class="p-schedule-day__time">10:00</span>
+              <span class="p-schedule-day__time">9:45 ~ 11:30</span>
               <div class="p-schedule-day__details">
-                <h3 class="p-schedule-day__cont-ttl">見出しタイトルが入ります</h3>
-                <p class="p-schedule-day__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <h3 class="p-schedule-day__cont-ttl">午前の活動と昼食</h3>
+                <p class="p-schedule-day__txt">0〜2歳児は排泄・手洗いのあと、設定保育に参加し、0歳児は早めに昼食をとります。3〜5歳児は11:30に昼食をとり、その後は絵本や玩具でゆったり過ごします。</p>
               </div>
             </li>
             <li class="p-schedule-day__item">
-              <span class="p-schedule-day__time">11:00</span>
+              <span class="p-schedule-day__time">12:30</span>
               <div class="p-schedule-day__details">
-                <h3 class="p-schedule-day__cont-ttl">見出しタイトルが入ります</h3>
-                <p class="p-schedule-day__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <h3 class="p-schedule-day__cont-ttl">午睡の時間</h3>
+                <p class="p-schedule-day__txt">12:30には全園児が排泄・手洗いを済ませ、絵本の読み聞かせのあと午睡に入ります。年齢に応じて休息の長さを調整しながら、心身をしっかりと休めます。</p>
               </div>
             </li>
             <li class="p-schedule-day__item">
-              <span class="p-schedule-day__time">12:30 ~ 15:00</span>
+              <span class="p-schedule-day__time">15:00</span>
               <div class="p-schedule-day__details">
-                <h3 class="p-schedule-day__cont-ttl">見出しタイトルが入ります</h3>
-                <p class="p-schedule-day__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <h3 class="p-schedule-day__cont-ttl">おやつの時間</h3>
+                <p class="p-schedule-day__txt">15:00に起床し、排泄と手洗いを済ませたあと、おやつをいただきます。心身をリフレッシュし、午後の活動に向けてエネルギーを補給します。</p>
               </div>
             </li>
             <li class="p-schedule-day__item">
-              <span class="p-schedule-day__time">15:30</span>
+              <span class="p-schedule-day__time">16:00</span>
               <div class="p-schedule-day__details">
-                <h3 class="p-schedule-day__cont-ttl">見出しタイトルが入ります</h3>
-                <p class="p-schedule-day__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <h3 class="p-schedule-day__cont-ttl">自由遊び・降園</h3>
+                <p class="p-schedule-day__txt">午後は玩具遊びやふれあい、ごっこ遊びなどを楽しみながら過ごし、保護者のお迎えに合わせて順次降園します。</p>
               </div>
             </li>
             <li class="p-schedule-day__item">
-              <span class="p-schedule-day__time">15:45 ~</span>
+              <span class="p-schedule-day__time">18:00 ~ 19:00</span>
               <div class="p-schedule-day__details">
-                <h3 class="p-schedule-day__cont-ttl">見出しタイトルが入ります</h3>
-                <p class="p-schedule-day__txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <h3 class="p-schedule-day__cont-ttl">延長保育</h3>
+                <p class="p-schedule-day__txt">18:00以降は延長保育を行い、家庭の都合に合わせて安心してお子さまをお預かりします。</p>
               </div>
             </li>
           </ul>

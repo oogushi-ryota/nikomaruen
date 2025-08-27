@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/common/favicon.png">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.min.css?250826">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.min.css?250827">
 
   <!-- フォント読み込み -->
   <script>
@@ -19,6 +19,16 @@
   </script>
 
   <?php wp_head(); ?>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T6DDBVZ96"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6T6DDBVZ96');
+  </script>
 </head>
 
 <body class="p-top">
