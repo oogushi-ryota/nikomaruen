@@ -51,4 +51,12 @@ add_filter( 'mwform_admin_mail_mw-wp-form-45', function( $Mail, $values, $Data )
     return $Mail;
 }, 10, 3 );
 
+// 404ページをトップにリダイレクト
+add_action('template_redirect', function() {
+    if (is_404()) {
+        wp_redirect(home_url(), 301); // 301は恒久的リダイレクト
+        exit;
+    }
+});
+
 ?>
