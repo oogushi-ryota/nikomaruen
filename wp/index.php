@@ -378,18 +378,18 @@ Template Name: トップページ
 
         <section class="p-top-wellbeing">
           <picture class="p-top-wellbeing__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/wellbeing/wellbeing_img.svg" width="151" height="226" alt="安全・健康への取り組みのイラスト" loading="lazy">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/wellbeing/wellbeing_img.svg" width="151" height="226" alt="食育・アレルギー対応のイラスト" loading="lazy">
           </picture>
           <hgroup class="l-top-section__hgroup c-top-ttl">
             <span class="c-top-ttl__en">INITIATIVE</span>
             <h2 class="l-top-section__ttl c-top-ttl__ja">
-              安全・健康への<br class="is-sp"><span class="p-top-wellbeing__txt-obj">取り組み</span>
+              <span class="p-top-wellbeing__txt-obj">食育・アレルギー<br class="is-sp">対応</span>
             </h2>
           </hgroup>
           <p class="l-top-section__txt">食育・衛生・防災など、園での安全・健康に関する取り組みをご紹介しています。</p>
           <div class="l-top-section__btn-wrap">
             <a href="<?php echo esc_url( home_url( '/wellbeing/' ) ); ?>" class="p-top-wellbeing__btn c-btn">
-              <span class="c-btn__txt">安全・健康への取り組み</span>
+              <span class="c-btn__txt">食育・アレルギー対応</span>
               <svg class="c-btn__svg" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.2324 5.68066L0.704101 11.1807L0.704102 0.180664L10.2324 5.68066Z" fill="white"/>
               </svg>                  

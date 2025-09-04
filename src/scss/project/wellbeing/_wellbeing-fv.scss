@@ -7,8 +7,8 @@
 
       &::before {
         content: "";
-        width: 55.2rem;
-        height: 6.3rem;
+        width: 46.2rem;
+        height: 5.2rem;
         background-image: url(../img/wellbeing/fv/ttl_obj.svg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -18,8 +18,8 @@
         z-index: -1;
 
         @media (max-width: 767px) {
-          width: 32rem;
-          height: 3.7rem; 
+          width: 28rem;
+          height: 3.2rem; 
           bottom: -1.4rem;
         }
       }
