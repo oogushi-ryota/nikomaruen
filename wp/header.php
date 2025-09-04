@@ -65,7 +65,7 @@
                     </li>
                     <li class="l-header__mega-menu-item">
                       <a href="<?php echo esc_url( home_url( '/wellbeing/' ) ); ?>" class="l-header__mega-menu-link">
-                        <span class="l-header__mega-menu-line">ｰ </span>安全・健康への取り組み
+                        <span class="l-header__mega-menu-line">ｰ </span>食育・アレルギー対応
                       </a>
                     </li>
                   </ul>

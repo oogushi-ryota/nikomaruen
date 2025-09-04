@@ -53,81 +53,81 @@ Template Name: ライフワークバランス
             <li class="p-lifework-flow__item">
               <span class="p-lifework-flow__time">8:30</span>
               <div class="p-lifework-flow__details">
-                <h3 class="p-lifework-flow__cont-ttl">出勤</h3>
-                <p class="p-lifework-flow__txt">出勤・着替えを済まして担当クラスに入り、子ども達の受け入れ</p>
+                <h3 class="p-lifework-flow__cont-ttl">順次登園・自由あそび</h3>
+                <p class="p-lifework-flow__txt">
+                  出勤 「おはようございます！」と笑顔で挨拶。<br>
+                  職員用の連絡ノート、保育日誌等を確認する。<br>
+                  園児受け入れ。<br>
+                  職員朝礼 クラスの活動、アレルギー情報、子どもたちの体調や気になる様子を共有する。<br>
+                  登園人数確認（にこまこスマートウオッチ使用）
+                </p>
               </div>
             </li>
             <li class="p-lifework-flow__item">
-              <span class="p-lifework-flow__time">9:00</span>
+              <span class="p-lifework-flow__time">9:30</span>
               <div class="p-lifework-flow__details">
-                <h3 class="p-lifework-flow__cont-ttl">職員朝礼</h3>
-                <p class="p-lifework-flow__txt">その日の保育内容や行事の確認、子どもたち一人ひとりの体調や気になる様子などを共有し、情報をしっかりと連携したうえで1日をスタート</p>
-              </div>
-            </li>
-            <li class="p-lifework-flow__item">
-              <span class="p-lifework-flow__time">9:15</span>
-              <div class="p-lifework-flow__details">
-                <h3 class="p-lifework-flow__cont-ttl">午前の活動</h3>
-                <p class="p-lifework-flow__txt">体操・立腰・名前呼び・水分補給</p>
+                <h3 class="p-lifework-flow__cont-ttl">検温・排泄・朝おやつ（牛乳）</h3>
+                <p class="p-lifework-flow__txt">
+                  個々の発達に合わせた援助。<br>
+                  子どもたちがワクワクする気持ちで今日一日をスタートできるような関わりをもつ。
+                </p>
               </div>
             </li>
             <li class="p-lifework-flow__item">
               <span class="p-lifework-flow__time">10:00</span>
               <div class="p-lifework-flow__details">
                 <h3 class="p-lifework-flow__cont-ttl">設定保育</h3>
-                <p class="p-lifework-flow__txt">散歩・製作などを行います。</p>
+                <p class="p-lifework-flow__txt">散歩、公園あそび、製作等を行う。</p>
               </div>
             </li>
             <li class="p-lifework-flow__item">
-              <span class="p-lifework-flow__time">11:00</span>
+              <span class="p-lifework-flow__time">11:00 ~ 11:30</span>
               <div class="p-lifework-flow__details">
-                <h3 class="p-lifework-flow__cont-ttl">給食</h3>
-                <p class="p-lifework-flow__txt">後片付けから手伝い、トイレなど生活面の自立を促し、手助けをします。</p>
+                <h3 class="p-lifework-flow__cont-ttl">排泄・給食</h3>
+                <p class="p-lifework-flow__txt">基本的に食育の観点から一緒に給食を食べる。</p>
               </div>
             </li>
             <li class="p-lifework-flow__item">
               <span class="p-lifework-flow__time">12:00</span>
               <div class="p-lifework-flow__details">
-                <h3 class="p-lifework-flow__cont-ttl">午睡</h3>
+                <h3 class="p-lifework-flow__cont-ttl">排泄・着替え（パジャマ）</h3>
+                <p class="p-lifework-flow__txt">一人ひとりの発達に合わせた援助をする。</p>
+              </div>
+            </li>
+            <li class="p-lifework-flow__item">
+              <span class="p-lifework-flow__time">12:30</span>
+              <div class="p-lifework-flow__details">
+                <h3 class="p-lifework-flow__cont-ttl">検温・午睡</h3>
                 <p class="p-lifework-flow__txt">
-                  検温・午睡チェック・日誌など記入。<br>
-                  その間に職員は給食を食べます。
+                  午睡前の絵本読み聞かせ、検温と口の中に何も入っていないかチェックしてから入眠。<br>
+                  午睡チェック、連絡ノートや週案記入など。<br>
+                  交代で休憩。
                 </p>
               </div>
             </li>
             <li class="p-lifework-flow__item">
-              <span class="p-lifework-flow__time">14:00 ~</span>
+              <span class="p-lifework-flow__time">15:00</span>
               <div class="p-lifework-flow__details">
-                <h3 class="p-lifework-flow__cont-ttl">午後の準備</h3>
-                <p class="p-lifework-flow__txt">起床した子どもから排泄、おやつの準備</p>
+                <h3 class="p-lifework-flow__cont-ttl">起床・排泄・着替え・検温</h3>
+                <p class="p-lifework-flow__txt">一人ひとりの発達に合わせた援助をする。</p>
               </div>
             </li>
             <li class="p-lifework-flow__item">
-              <span class="p-lifework-flow__time">14:30 ~</span>
+              <span class="p-lifework-flow__time">15:30</span>
               <div class="p-lifework-flow__details">
                 <h3 class="p-lifework-flow__cont-ttl">おやつ</h3>
-                <p class="p-lifework-flow__txt">職員も一緒に食べます。</p>
+                <p class="p-lifework-flow__txt">基本的におやつも一緒に食べる。</p>
               </div>
             </li>
             <li class="p-lifework-flow__item">
-              <span class="p-lifework-flow__time">15:00 ~</span>
+              <span class="p-lifework-flow__time">16:00 ~ 17:30</span>
               <div class="p-lifework-flow__details">
-                <h3 class="p-lifework-flow__cont-ttl">午後の活動</h3>
-                <p class="p-lifework-flow__txt">お歌の時間・立腰</p>
-              </div>
-            </li>
-            <li class="p-lifework-flow__item">
-              <span class="p-lifework-flow__time">15:30 ~</span>
-              <div class="p-lifework-flow__details">
-                <h3 class="p-lifework-flow__cont-ttl">自由遊び</h3>
-                <p class="p-lifework-flow__txt">園にある絵本や玩具で一緒に遊びます。</p>
-              </div>
-            </li>
-            <li class="p-lifework-flow__item">
-              <span class="p-lifework-flow__time">17:00 ~</span>
-              <div class="p-lifework-flow__details">
-                <h3 class="p-lifework-flow__cont-ttl">勤務終了</h3>
-                <p class="p-lifework-flow__txt">着替えて退勤します。</p>
+                <h3 class="p-lifework-flow__cont-ttl">自由あそび・順次降園</h3>
+                <p class="p-lifework-flow__txt">
+                  子どもたちと一緒に遊ぶ。<br>
+                  お迎え時保護者対応。<br>
+                  退勤
+                </p>
               </div>
             </li>
           </ul>

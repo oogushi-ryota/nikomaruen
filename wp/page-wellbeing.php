@@ -13,7 +13,7 @@ Template Name: 安全・健康への取り組み
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="c-breadcrumb__link">ホーム</a>
           </li>
           <li class="c-breadcrumb__item">
-            <span class="c-breadcrumb__link">安全・健康への取り組み</span>
+            <span class="c-breadcrumb__link">食育・アレルギー対応</span>
           </li>
         </ul>
       </nav>
@@ -26,7 +26,7 @@ Template Name: 安全・健康への取り組み
             <hgroup class="c-under-fv__hgroup">
               <span class="c-under-fv__en">INITIATIVE</span>
               <h1 class="c-under-fv__ja">
-                <span class="p-wellbeing-fv__txt-obj u-fs-28">安全・健康への取り組み</span>
+                <span class="p-wellbeing-fv__txt-obj u-fs-28">食育・アレルギー対応</span>
               </h1>
             </hgroup>
           </div>
@@ -36,7 +36,7 @@ Template Name: 安全・健康への取り組み
 
     <section class="p-wellbeing-cont">
       <div class="c-inner">
-        <h2 class="p-about-facility__ttl c-sec-ttl">にこまるえんの安全・健康への取り組み</h2>
+        <h2 class="p-about-facility__ttl c-sec-ttl">にこまるえんの食育・アレルギー対応</h2>
         <div class="p-wellbeing-cont__wrap">
           <div class="p-wellbeing-cont__blk">
             <h3 class="p-wellbeing-cont__blk-ttl p-wellbeing-cont__blk-ttl--security">安全管理（園内・登園・防犯など）</h3>
@@ -64,7 +64,7 @@ Template Name: 安全・健康への取り組み
             <h3 class="p-wellbeing-cont__blk-ttl p-wellbeing-cont__blk-ttl--allergie">食育・アレルギー対応</h3>
             <p class="p-wellbeing-cont__txt">栄養バランスの整った食事や、子どもたちが食べる楽しさを学べる食育にも力を入れています。</p>
             <ul class="p-wellbeing-cont__list">
-              <li class="p-wellbeing-cont__item">栄養士が献立を作成し、旬の食材や行事食も取り入れています</li>
+              <li class="p-wellbeing-cont__item">札幌市の統一献立を使用し、旬の食材や行事食も取り入れています</li>
               <li class="p-wellbeing-cont__item">アレルギーのあるお子さまには、個別対応を徹底しています</li>
               <li class="p-wellbeing-cont__item">食育活動（クッキング、野菜栽培など）を通して“食べること”の大切さを伝えています</li>
             </ul>

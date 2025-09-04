@@ -37,7 +37,7 @@
                   </li>
                   <li class="l-footer__menu-item">
                     <a href="<?php echo esc_url( home_url( '/wellbeing/' ) ); ?>" class="l-footer__menu-link">
-                      <span class="l-footer__menu-link-line">ｰ </span>安全・健康への取り組み
+                      <span class="l-footer__menu-link-line">ｰ </span>食育・アレルギー対応
                     </a>
                   </li>
                 </ul>
