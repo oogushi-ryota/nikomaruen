@@ -6,13 +6,12 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 // === ユーティリティライブラリ読み込み ===
-import { initSmoothScroll, initAnchorSmoothScroll } from "./utils/scrollUtils.js";
+import { initAnchorSmoothScroll } from "./utils/scrollUtils.js";
 import { initSwiper } from "./utils/swiperUtils.js";
 import { initAccordion } from "./utils/accordionUtils.js";
-import { initScrollFadeIn, initClipPathAnimation, initStaggerFadein } from "./utils/scrollEffects.js";
+import { initTabs } from "./utils/tabUtils.js";
 import { initHamburgerMenu } from "./utils/hamburgerUtils.js";
 import { preventEnterSubmit } from "./utils/formUtils.js";
-import { animateInitialTextSplit, animateSplitTextOnScroll } from "./utils/splitTextUtils.js";
 
 // ▼GSAP に ScrollTrigger を登録
 gsap.registerPlugin(ScrollTrigger);
@@ -26,8 +25,9 @@ window.addEventListener('load', () => {
 
 // HTMLの構造がすべて解析されて、DOM操作が安全に行える状態になったタイミングで実行
 window.addEventListener('DOMContentLoaded', () => {
-  initSwiper();          // ← スワイパー
+  initSwiper();         // ← スワイパー
   initAccordion()       //アコーディオン
+  initTabs()            //タブ切り替え
   initAnchorSmoothScroll();     // ← スムーススクロール
   preventEnterSubmit();
   initHamburgerMenu({           // ← ハンバーガーメニュー
@@ -35,9 +35,4 @@ window.addEventListener('DOMContentLoaded', () => {
     btnSelector: ".js-nav-btn",
     closeTargetSelector: ".l-header__nav-item a",
   });
-
-  // animateSplitTextOnScroll();   // ← スクロール連動のテキストアニメーション
-  // initScrollFadeIn();           // ← フェードイン
-  // initClipPathAnimation();      // ← クリップパスアニメーション
-  // initStaggerFadein();          // ← 順番にフェードイン
 });
