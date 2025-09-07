@@ -64,7 +64,7 @@ Template Name: 職員インタビュー
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/thumbnail.jpg" alt="代替画像">
                 <?php endif; ?>
                 </picture>
-                <span class="p-interview-archive__name" style="background-color: <?php the_field('backgroud-color'); ?>;"><?php the_field('year'); ?>年入職 : <?php the_field('teacher'); ?>先生</span>
+                <span class="p-interview-archive__name" style="background-color: <?php the_field('backgroud-color'); ?>;"><?php the_field('year'); ?>年入職 : <?php the_field('teacher'); ?></span>
               </div>
               <p class="p-interview-archive__txt"><?php the_title(); ?></p>
             </a>

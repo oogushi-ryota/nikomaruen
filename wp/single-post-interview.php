@@ -47,7 +47,7 @@ Template Name: 職員インタビュー詳細
             </picture>
           <?php endif; ?>
           <div class="p-interview-details__ttlarea">
-            <span class="p-interview-details__name" style="color: #852A17;"><?php the_field('year'); ?>年入職 : <?php the_field('teacher'); ?>先生</span>
+            <span class="p-interview-details__name" style="color: #852A17;"><?php the_field('year'); ?>年入職 : <?php the_field('teacher'); ?></span>
             <h2 class="p-interview-details__ttl"><?php the_title(); ?></h2>
           </div>
         </div>

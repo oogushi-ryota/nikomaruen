@@ -437,7 +437,7 @@ Template Name: トップページ
                         <?php endif; ?>
                       </picture>
                       <span class="p-top-interview__name" style="background-color: <?php the_field('backgroud-color'); ?>;">
-                        <?php the_field('year'); ?>年入職 : <?php the_field('teacher'); ?>先生
+                        <?php the_field('year'); ?>年入職 : <?php the_field('teacher'); ?>
                       </span>
                     </div>
                     <p class="p-top-interview__txt"><?php the_title(); ?></p>
