@@ -255,7 +255,7 @@ Template Name: 福利厚生・待遇
             <tr class="p-benefits-job__tr">
               <th class="p-benefits-job__th">給与</th>
               <td class="p-benefits-job__td">
-                時給1,100円スタート<br>
+                時給1,200円スタート<br>
                 7:00~8:00 800円/1日手当<br>
                 17:00~19:00時給1,300円<br>
                 処遇改善4,500円/月
@@ -330,7 +330,7 @@ Template Name: 福利厚生・待遇
             <tr class="p-benefits-job__tr">
               <th class="p-benefits-job__th">給与</th>
               <td class="p-benefits-job__td">
-                時給1,060円スタート<br>
+                時給1,090円スタート<br>
                 処遇改善4,500円/月
               </td>
             </tr>
