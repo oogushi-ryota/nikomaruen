@@ -12,7 +12,7 @@
     </h2>
     <p class="c-entry__txt">
       園の見学など<br class="is-sp">
-      ご気軽にお問い合わせください。
+      お気軽にお問い合わせください。
     </p>
     <a href="<?php echo esc_url( home_url( '/entry/' ) ); ?>" class="c-entry__btn">
       <span class="c-entry__btn-txt">ENTRY</span>
