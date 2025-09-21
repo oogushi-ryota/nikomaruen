@@ -143,211 +143,212 @@ Template Name: 福利厚生・待遇
       <div class="p-benefits-job__inner">
         <h2 class="p-benefits-job__ttl c-sec-ttl">募集要項</h2>
         <ul class="c-tabbtn-list js-tabbtn-list">
-          <li class="c-tabbtn-list__item js-tabbtn-item" id="tab-list1" data-term-id="1">正職員保育士</li>
-          <li class="c-tabbtn-list__item js-tabbtn-item" id="tab-list2" data-term-id="2">パート保育士</li>
-          <li class="c-tabbtn-list__item js-tabbtn-item" id="tab-list3" data-term-id="3">調理員</li>
+          <?php if ( get_field('recruit_position_1_name') ) : ?>
+            <li class="c-tabbtn-list__item js-tabbtn-item" id="tab-list1" data-term-id="1">
+              <?php the_field('recruit_position_1_name'); ?>
+            </li>
+          <?php endif; ?>
+          <?php if ( get_field('recruit_position_2_name') ) : ?>
+            <li class="c-tabbtn-list__item js-tabbtn-item" id="tab-list2" data-term-id="2">
+              <?php the_field('recruit_position_2_name'); ?>
+            </li>
+          <?php endif; ?>
+          <?php if ( get_field('recruit_position_3_name') ) : ?>
+            <li class="c-tabbtn-list__item js-tabbtn-item" id="tab-list3" data-term-id="3">
+              <?php the_field('recruit_position_3_name'); ?>
+            </li>
+          <?php endif; ?>
         </ul>
         <table class="p-benefits-job__table js-tab-item" id="tab1">
           <tbody class="p-benefits-job__tbody">
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">募集職種</th>
-              <td class="p-benefits-job__td">正職員保育士</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">応募資格</th>
-              <td class="p-benefits-job__td">保育士資格をお持ちの方</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">雇用形態</th>
-              <td class="p-benefits-job__td">正職員</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">勤務地</th>
-              <td class="p-benefits-job__td">にこまるえん円山</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">勤務時間</th>
-              <td class="p-benefits-job__td">
-                7：00～19：00の間のシフト制<br>
-                週40時間 完全週休2日制<br>
-                固定勤務可（例）8：30～17：30<br>
-                固定勤務の場合、処遇改善29,000円スタート
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">給与</th>
-              <td class="p-benefits-job__td">
-                月給：20,1000円スタート<br>
-                処遇改善：39,000円/月<br>
-                住宅手当：5,000円/月<br>
-                早朝手当：500円/1日手当（7～8：00）<br>
-                賞与：夏7/10 冬12/10 年3.3ヶ月<br>
-                燃料手当：世帯主6万円 その他3万円 12/10支給
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">待遇</th>
-              <td class="p-benefits-job__td">
-                [待遇]各社保完備（勤務による）<br>
-                交通費実費、車通勤可（円山不可）昇給、有給、専用のノートバソコン支給<br>
-                スマートウオッチ支給<br>
-                [応募]電話またはWebで応募ください
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">入職祝金</th>
-              <td class="p-benefits-job__td">20万円支払い内訳（勤務3日目5万円 その後25日払い5万円×3回）</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">引越し費用ご負担</th>
-              <td class="p-benefits-job__td">
-                沖縄県、九州、四国から札幌市に引越し：一律50万円その他の道外から札幌市に引越し：一律30万円道内から札幌市に引越し：一律15万円（札幌市内の引越しは適用外）<br>
-                引越し業者に支払い日にお支払いします。<br>
-                ※ご家族の転園の場合で札幌市に引越しをされた場合もお支払いいたします。
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">募集理由</th>
-              <td class="p-benefits-job__td">増員の募集です。</td>
-            </tr>
+            <?php if ( get_field('recruit_position_1_name') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">募集職種</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_name'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_1_requirements') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">応募資格</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_requirements'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_1_employment') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">雇用形態</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_employment'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_1_workplace') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">勤務地</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_workplace'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_1_hours') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">勤務時間</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_hours'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_1_salary') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">給与</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_salary'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_1_benefits') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">待遇</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_benefits'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_1_bonus') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">入職祝金</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_bonus'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_1_support') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">引越し費用ご負担</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_support'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_1_reason') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">募集理由</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_1_reason'); ?></td>
+              </tr>
+            <?php endif; ?>
           </tbody>
         </table>
         <table class="p-benefits-job__table js-tab-item" id="tab2">
           <tbody class="p-benefits-job__tbody">
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">募集職種</th>
-              <td class="p-benefits-job__td">パート保育士</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">応募資格</th>
-              <td class="p-benefits-job__td">保育士資格をお持ちの方</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">雇用形態</th>
-              <td class="p-benefits-job__td">パート</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">勤務地</th>
-              <td class="p-benefits-job__td">①にこまるえん円山 ②にこまるえん白石 ③にこまるえん東白石</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">勤務時間</th>
-              <td class="p-benefits-job__td">
-                ①にこまるえん円山<br>
-                a）7:00~9:00<br>
-                b）9:00~17:00<br>
-                c）11:00~19:00<br><br>
-                ②にこまるえん白石<br>
-                a）7:00~9:00<br>
-                b）14:00~18:00<br>
-                c）15:00~19:00<br><br>
-                ③にこまるえん東白石<br>
-                a）8:30~13:30<br>
-                b）9:00~14:00<br><br>
-                固定シフト 週3～6日勤務<br>
-                その他 お気軽にお問い合わせください。<br>
-                募集している時間はあくまで目安としております。<br>
-                ご希望の時間帯と１～２時間のズレがある場合は調整致しますのでお気軽にご相談下さい。<br>
-                慣らし保育後でも大歓迎勤<br>
-                務開始日は柔軟に対応致します。
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">給与</th>
-              <td class="p-benefits-job__td">
-                時給1,200円スタート<br>
-                7:00~8:00 800円/1日手当<br>
-                17:00~19:00時給1,300円<br>
-                処遇改善4,500円/月
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">待遇</th>
-              <td class="p-benefits-job__td">
-                [待遇]各社保完備（勤務による）<br>
-                交通費実費、車通勤可（円山不可）昇給、有給、正職員登用有<br>
-                スマートウオッチ支給<br>
-                （H30年から8名の方がパートから正職員になっております）<br>
-                [応募]電話またはWebで応募ください
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">入職祝金</th>
-              <td class="p-benefits-job__td">20万円支払い内訳（勤務3日目5万円 その後25日払い5万円×3回）</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">引越し費用ご負担</th>
-              <td class="p-benefits-job__td">
-                沖縄県、九州、四国から札幌市に引越し：一律50万円その他の道外から札幌市に引越し：一律30万円道内から札幌市に引越し：一律15万円（札幌市内の引越しは適用外）<br>
-                引越し業者に支払い日にお支払いします。<br>
-                ※ご家族の転園の場合で札幌市に引越しをされた場合もお支払いいたします。
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">募集理由</th>
-              <td class="p-benefits-job__td">各園増員の募集です。</td>
-            </tr>
+            <?php if ( get_field('recruit_position_2_name') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">募集職種</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_name'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_2_requirements') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">応募資格</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_requirements'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_2_employment') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">雇用形態</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_employment'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_2_workplace') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">勤務地</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_workplace'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_2_hours') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">勤務時間</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_hours'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_2_salary') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">給与</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_salary'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_2_benefits') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">待遇</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_benefits'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_2_bonus') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">入職祝金</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_bonus'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_2_support') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">引越し費用ご負担</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_support'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_2_reason') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">募集理由</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_2_reason'); ?></td>
+              </tr>
+            <?php endif; ?>
           </tbody>
         </table>
         <table class="p-benefits-job__table js-tab-item" id="tab3">
           <tbody class="p-benefits-job__tbody">
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">募集職種</th>
-              <td class="p-benefits-job__td">調理員</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">応募資格</th>
-              <td class="p-benefits-job__td">
-                調理師、栄養士免許あれば尚可<br>
-                資格は必要ありません。
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">雇用形態</th>
-              <td class="p-benefits-job__td">パート</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">勤務地</th>
-              <td class="p-benefits-job__td">①にこまるえん白石 ②にこまるえん南郷</td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">勤務時間</th>
-              <td class="p-benefits-job__td">
-                ①白石<br>
-                a）8:00~13:30<br>
-                b）9:30~17:30<br>
-                c）13:00~17:00<br><br>
-                ②南郷<br>
-                c）13:00~17:00<br>
-                b）15:00~17:00<br>
-                上記固定勤務可<br><br>
-                募集している時間はあくまで目安としております。<br>
-                ご希望の時間帯と１～２時間のズレがある場合は調整致しますのでお気軽にご相談下さい。<br>
-                慣らし保育後でも大歓迎勤<br>
-                務開始日は柔軟に対応致します。
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">給与</th>
-              <td class="p-benefits-job__td">
-                時給1,090円スタート<br>
-                処遇改善4,500円/月
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">待遇</th>
-              <td class="p-benefits-job__td">
-                [待遇]各社保完備（勤務による）<br>
-                交通費実費、車通勤可（円山不可）昇給、有給、正職員登用有<br>
-                スマートウオッチ支給<br>
-                （H30年から8名の方がパートから正職員になっております）<br>
-                [応募]電話またはWebで応募ください
-              </td>
-            </tr>
-            <tr class="p-benefits-job__tr">
-              <th class="p-benefits-job__th">入職祝金</th>
-              <td class="p-benefits-job__td">10万円支払い内訳（勤務3日目5万円 その後25日払い5万円）</td>
-            </tr>
+            <?php if ( get_field('recruit_position_3_name') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">募集職種</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_name'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_3_requirements') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">応募資格</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_requirements'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_3_employment') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">雇用形態</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_employment'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_3_workplace') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">勤務地</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_workplace'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_3_hours') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">勤務時間</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_hours'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_3_salary') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">給与</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_salary'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_3_benefits') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">待遇</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_benefits'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_3_bonus') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">入職祝金</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_bonus'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_3_support') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">引越し費用ご負担</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_support'); ?></td>
+              </tr>
+            <?php endif; ?>
+            <?php if ( get_field('recruit_position_3_reason') ) : ?>
+              <tr class="p-benefits-job__tr">
+                <th class="p-benefits-job__th">募集理由</th>
+                <td class="p-benefits-job__td"><?php the_field('recruit_position_3_reason'); ?></td>
+              </tr>
+            <?php endif; ?>
           </tbody>
         </table>
       </div>
